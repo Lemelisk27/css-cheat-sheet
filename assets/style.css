@@ -1,0 +1,76 @@
+:root {
+    --dark: #404040;
+    --light: fuchsia;
+    --lighter: white;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+header h1 {
+    color: var(--light);
+    font-size: 200%;
+    text-align: center;
+    padding: 25px 0;
+}
+
+header p {
+    color: var(--lighter);
+    text-align: center;
+    padding-bottom: 25px;
+    margin: 0 10%;
+}
+
+main {
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    width: 33.33%;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: var(--lighter);
+    margin: 1%;
+    padding: 20px;
+}
+
+.card h2 {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--lighter);
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 150%;
+    position: relative;
+    margin-top: -35px;
+    z-index: 1;
+}
+
+.card p {
+    color: var(--light);
+    text-align: left;
+    margin: 1% 0;
+}
+
+.card pre {
+    background-image: linear-gradient(
+        slategrey 0%,
+        fuchsia 100%
+    );    
+    color: var(--lighter);
+    padding: 25px 0;
+    text-align: left;
+    border-radius: 5px;
+}
+
+footer {
+    color: var(--light);
+    text-align: center;
+    font-size: 125%;
+}
