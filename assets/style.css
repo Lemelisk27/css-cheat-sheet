@@ -23,20 +23,19 @@ header p {
 }
 
 main {
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 0;
-    width: 33.33%;
+    width: 30%;
     border-style: dashed;
     border-width: 1px;
     border-color: var(--lighter);
     margin: 1%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card h2 {
@@ -65,7 +64,6 @@ main {
     );    
     color: var(--lighter);
     padding: 25px 0;
-    text-align: left;
     border-radius: 5px;
 }
 
@@ -73,4 +71,11 @@ footer {
     color: var(--light);
     text-align: center;
     font-size: 125%;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 50%;
+        background-color: white;
+    }
 }
